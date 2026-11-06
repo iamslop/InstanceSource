@@ -1,4 +1,3 @@
-```markdown
 # instance
 
 A feature-rich, all-in-one client-side Lua script built for **Rivals** on Roblox. It bundles combat assistance, visual customization, movement utilities, and quality-of-life modules into a single Linoria-based menu with full config save/load support and multiple UI themes.
@@ -247,15 +246,12 @@ To auto-load a config on every inject, save it and then click **Set as Autoload*
 
 **Configs** are saved as JSON at:
 
-```
 instance/rivals/settings/<name>.json
-```
 
 **Themes** are saved at:
 
-```
 instance/themes/<name>.json
-```
+
 
 **Autoload:** put a config name in `instance/rivals/settings/autoload.txt`.
 
@@ -287,35 +283,16 @@ Each key picker supports:
 
 After first run:
 
-```
 instance/
 |-- rivals/
-|   `-- settings/
-|       |-- autoload.txt
-|       |-- default.json
-|       `-- ...
-`-- themes/
-    `-- ...
+| -- settings/ | |-- autoload.txt | |-- default.json |-- ...
+-- themes/-- ...
 
 Hitsounds/
-`-- sounds/
-    |-- amongus.mp3
-    |-- bonk.mp3
-    |-- bruh.mp3
-    |-- fart.mp3
-    |-- minecraft.mp3
-    |-- neverlose.mp3
-    |-- osu.mp3
-    |-- Stars.mp3
-    |-- rust hs.mp3
-    `-- vine.mp3
+-- sounds/ |-- amongus.mp3 |-- bonk.mp3 |-- bruh.mp3 |-- fart.mp3 |-- minecraft.mp3 |-- neverlose.mp3 |-- osu.mp3 |-- Stars.mp3 |-- rust hs.mp3-- vine.mp3
 
 KillSounds/
-`-- sounds/
-    |-- kill_1.mp3
-    |-- kill_2.mp3
-    `-- kill_3.mp3
-```
+-- sounds/ |-- kill_1.mp3 |-- kill_2.mp3-- kill_3.mp3
 
 Fonts and `.font` manifests are cached in the executor workspace root:
 - `roboto_font.ttf` / `roboto_font.font`
@@ -331,7 +308,6 @@ Fonts and `.font` manifests are cached in the executor workspace root:
 
 The script is organized into chained IIFEs and `do ... end` blocks:
 
-```
 Boot
 |-- instanceShowLoadingNotification()
 |-- instanceSafeRequire() plus module cache
@@ -394,7 +370,7 @@ Finalization
 |-- Watermark (FPS)
 |-- Keybind list panel
 `-- Config and theme persistence hooks
-```
+
 
 ---
 
@@ -432,4 +408,4 @@ Finalization
 ## License
 
 This project is provided as-is for educational purposes only. No warranty is provided. The user assumes all responsibility for how this software is used.
-```
+
